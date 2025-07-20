@@ -1,14 +1,14 @@
 ---
 layout: default
 title: KnowledgeRatio - Terminal Access
-description: Access terminal interface for KnowledgeRatio knowledge base system
+description: Access terminal interface for KnowledgeRatio base system
 ---
 
 <div class="home fade-in">
   <div class="hero">
     <div class="terminal-window">
       <div class="terminal-header">
-        <span>KnowledgeRatio v2.0.1</span>
+        <span>KnowledgeRatio v1.0</span>
         <span class="terminal-status">SYSTEM READY</span>
       </div>
       <div class="terminal-body">
@@ -29,19 +29,19 @@ description: Access terminal interface for KnowledgeRatio knowledge base system
           <div class="name-display">USER: {{ site.author.name | default: "Josh" }}</div>
           
           <div class="bio">
-            <p>{{ site.description | default: "Full-stack developer exploring the intersection of technology and knowledge." }}</p>
-            <p>Specializing in modern web development, data engineering, and system architecture.</p>
+            <p>{{ site.description | default: "Security, AI & the Future of Work" }}</p>
+            <p>Welcome to the KnowledgeRatio blog and projects site.</p>
             <p>Building scalable solutions for complex problems.</p>
           </div>
           
           <div class="stats">
             <div class="stat-item">
-              <span class="stat-label">SECURITY_LEVEL</span>
-              <span class="stat-value">MAXIMUM</span>
+              <span class="stat-label">VERIFICATION</span>
+              <span class="stat-value">EXPLICIT</span>
             </div>
             <div class="stat-item">
               <span class="stat-label">ACCESS_RIGHTS</span>
-              <span class="stat-value">UNLIMITED</span>
+              <span class="stat-value">LEAST_PRIVILEGE</span>
             </div>
             <div class="stat-item">
               <span class="stat-label">SYSTEM_STATUS</span>
@@ -49,7 +49,7 @@ description: Access terminal interface for KnowledgeRatio knowledge base system
             </div>
             <div class="stat-item">
               <span class="stat-label">KNOWLEDGE_BASE</span>
-              <span class="stat-value">ACTIVE</span>
+              <span class="stat-value">ACTIVE, SECURED</span>
             </div>
           </div>
         </div>
@@ -63,8 +63,7 @@ description: Access terminal interface for KnowledgeRatio knowledge base system
       <a href="{{ '/blog/' | relative_url }}" class="access-card">
         <div class="card-header">BLOG_ENTRIES</div>
         <div class="card-content">
-          <p>Recent system logs and technical documentation</p>
-          <p>Programming insights and development notes</p>
+          <p>Analysis & Commentary</p>
           <p class="card-action">ACCESS LOGS ></p>
         </div>
       </a>
@@ -72,8 +71,7 @@ description: Access terminal interface for KnowledgeRatio knowledge base system
       <a href="{{ '/projects/' | relative_url }}" class="access-card">
         <div class="card-header">PROJECT_FILES</div>
         <div class="card-content">
-          <p>Code repositories and development work</p>
-          <p>Open source contributions and experiments</p>
+          <p>Code repositories, open source contributions and experiments</p>
           <p class="card-action">BROWSE FILES ></p>
         </div>
       </a>
@@ -81,18 +79,8 @@ description: Access terminal interface for KnowledgeRatio knowledge base system
       <a href="{{ '/about/' | relative_url }}" class="access-card">
         <div class="card-header">USER_PROFILE</div>
         <div class="card-content">
-          <p>Complete system administrator information</p>
           <p>Background, skills, and contact protocols</p>
           <p class="card-action">VIEW PROFILE ></p>
-        </div>
-      </a>
-      
-      <a href="{{ site.github.repository_url }}" target="_blank" class="access-card">
-        <div class="card-header">SOURCE_CODE</div>
-        <div class="card-content">
-          <p>Raw system files and documentation</p>
-          <p>Complete codebase access via GitHub</p>
-          <p class="card-action">EXTERNAL LINK ></p>
         </div>
       </a>
     </div>
@@ -115,7 +103,7 @@ description: Access terminal interface for KnowledgeRatio knowledge base system
   }
   
   // Start typing after a short delay
-  setTimeout(typeText, 1000);
+  setTimeout(typeText, 500);
   
   // Add scanlines effect to body
   document.body.classList.add('scanlines');

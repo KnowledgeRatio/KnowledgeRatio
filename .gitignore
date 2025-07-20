@@ -8,6 +8,9 @@ _site/
 Gemfile.lock
 vendor/
 
+# React backup (migration artifacts)
+react-backup/
+
 # OS generated files
 .DS_Store
 .DS_Store?
