@@ -3,31 +3,32 @@
 ## Document Information
 
 - **Project**: KnowledgeRatio - WarGames-Inspired Personal Website
-- **Version**: 1.0
+- **Version**: 2.0
 - **Date**: July 20, 2025
-- **Technology Stack**: React 19, React Router, CSS3, Vite, GitHub Pages
+- **Technology Stack**: Jekyll 4.3.2, SCSS, JavaScript, GitHub Pages
 
 ## 1. Executive Summary
 
-KnowledgeRatio is a personal blog and portfolio website designed with a distinctive WarGames-inspired terminal aesthetic. The application serves as a minimalist platform for showcasing technical projects, publishing blog articles, and presenting professional information in an engaging retro-computing interface.
+KnowledgeRatio is a personal blog and portfolio website designed with a distinctive WarGames-inspired terminal aesthetic. The application serves as a minimalist platform for showcasing technical projects, publishing blog articles, and presenting professional information in an engaging retro-computing interface. The site has been migrated from React to Jekyll for better GitHub Pages integration and improved content management.
 
 ## 2. Technology Architecture
 
-### 2.1 Frontend Framework
-- **React 19**: Modern component-based UI library with hooks
-- **React Router**: Client-side routing for single-page application behavior
-- **Vite**: Fast build tool and development server with hot module replacement
+### 2.1 Static Site Generation
+- **Jekyll 4.3.2**: Ruby-based static site generator with GitHub Pages native support
+- **Liquid Templating**: Dynamic content rendering with Jekyll's templating engine
+- **Markdown Processing**: Kramdown for blog post content with syntax highlighting
 
 ### 2.2 Styling Architecture
+- **SCSS**: Enhanced CSS with variables, nesting, and mixins
 - **CSS3 Custom Properties**: Centralized theming system for colors and spacing
 - **CSS Grid & Flexbox**: Responsive layout systems
 - **CSS Animations**: Terminal effects including blinking cursors, scanlines, and typing animations
 - **Mobile-First Design**: Responsive breakpoints at 768px and 480px
 
 ### 2.3 Deployment Infrastructure
-- **GitHub Pages**: Static site hosting with custom domain support
-- **GitHub Actions**: Automated CI/CD pipeline for deployment
-- **Vite Build System**: Optimized production builds with code splitting
+- **GitHub Pages**: Static site hosting with Jekyll native support
+- **GitHub Actions**: Automated CI/CD pipeline for Jekyll builds
+- **Jekyll Build System**: Optimized static site generation with asset processing
 
 ### 2.4 Design System
 

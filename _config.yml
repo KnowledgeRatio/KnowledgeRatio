@@ -26,13 +26,13 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "default"
       permalink: "/blog/:title/"
   - scope:
       path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "default"
 
 # Pagination
 paginate: 10
