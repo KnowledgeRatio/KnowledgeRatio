@@ -1,0 +1,58 @@
+title: KnowledgeRatio
+description: A WarGames-inspired personal website featuring terminal aesthetics and retro computing vibes
+baseurl: "/KnowledgeRatio"
+url: "https://knowledgeratio.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+  projects:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:title/"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - react-backup/
+
+# WarGames Theme Settings
+wargames:
+  terminal_green: "#00ff00"
+  terminal_dark_green: "#00cc00" 
+  terminal_bg: "#000000"
+  terminal_amber: "#ffaa00"
+  font_mono: "'Courier Prime', 'Courier New', monospace"

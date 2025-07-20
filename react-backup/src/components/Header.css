@@ -1,0 +1,114 @@
+.header {
+  position: relative;
+  background: var(--terminal-bg);
+  border-bottom: 2px solid var(--terminal-green);
+  padding: var(--spacing-md);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.logo-link {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  color: var(--terminal-green);
+  text-shadow: 0 0 15px var(--terminal-green);
+  transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+  color: var(--terminal-amber);
+  text-shadow: 0 0 15px var(--terminal-amber);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  color: var(--terminal-dark-green);
+  transition: all 0.3s ease;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: var(--terminal-green);
+  border-color: var(--terminal-green);
+  background: rgba(0, 255, 0, 0.05);
+  text-shadow: 0 0 10px var(--terminal-green);
+}
+
+.nav-link.active {
+  color: var(--terminal-amber);
+  border-color: var(--terminal-amber);
+  background: rgba(255, 170, 0, 0.1);
+  text-shadow: 0 0 10px var(--terminal-amber);
+}
+
+.header-divider {
+  font-family: var(--font-mono);
+  color: var(--terminal-dark-green);
+  font-size: 12px;
+  line-height: 1;
+  margin-top: var(--spacing-sm);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .nav-list {
+    gap: var(--spacing-md);
+  }
+  
+  .logo-link {
+    font-size: var(--font-size-base);
+  }
+  
+  .header-divider {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .nav-link {
+    padding: calc(var(--spacing-xs) / 2) var(--spacing-xs);
+    font-size: var(--font-size-small);
+  }
+  
+  .header {
+    padding: var(--spacing-sm);
+  }
+}

@@ -1,0 +1,408 @@
+---
+layout: default
+title: About - User Profile
+description: User profile and system administrator information
+permalink: /about/
+---
+
+<div class="about fade-in">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span>User Profile - System Administrator</span>
+      <span class="terminal-status">PROFILE ACCESS GRANTED</span>
+    </div>
+    <div class="terminal-body">
+      <div class="typing-text">
+        <span id="typed-text">></span>
+        <span class="cursor"></span>
+      </div>
+      
+      <div class="profile-content" style="opacity: 0;">
+        <div class="profile-grid">
+          <div class="profile-main">
+            <div class="user-header">
+              <div class="user-info">
+                <h1 class="user-name">{{ site.author.name | default: "Josh" }}</h1>
+                <div class="user-title">Full-Stack Developer & System Architect</div>
+                <div class="user-status">
+                  <span class="status-indicator status-online"></span>
+                  <span>ONLINE - AVAILABLE FOR COLLABORATION</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bio-section">
+              <h2>System Overview</h2>
+              <div class="bio-text">
+                <p>Experienced full-stack developer with a passion for creating efficient, scalable solutions to complex technical challenges. Specializing in modern web technologies, data engineering, and system architecture.</p>
+                
+                <p>I enjoy working at the intersection of frontend user experience and backend system design, building applications that are both powerful and intuitive. My approach focuses on clean code, performance optimization, and maintainable architecture.</p>
+                
+                <p>When not coding, I'm exploring new technologies, contributing to open source projects, and sharing knowledge through technical writing and mentoring.</p>
+              </div>
+            </div>
+            
+            <div class="experience-section">
+              <h2>Technical Specifications</h2>
+              <div class="tech-categories">
+                <div class="tech-category">
+                  <h3>Frontend Systems</h3>
+                  <div class="tech-list">
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">TypeScript</span>
+                    <span class="tech-item">Vue.js</span>
+                    <span class="tech-item">Next.js</span>
+                    <span class="tech-item">CSS3/SCSS</span>
+                    <span class="tech-item">Vite</span>
+                  </div>
+                </div>
+                
+                <div class="tech-category">
+                  <h3>Backend Infrastructure</h3>
+                  <div class="tech-list">
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">Go</span>
+                    <span class="tech-item">PostgreSQL</span>
+                    <span class="tech-item">Redis</span>
+                    <span class="tech-item">Docker</span>
+                  </div>
+                </div>
+                
+                <div class="tech-category">
+                  <h3>Cloud & DevOps</h3>
+                  <div class="tech-list">
+                    <span class="tech-item">AWS</span>
+                    <span class="tech-item">Kubernetes</span>
+                    <span class="tech-item">GitHub Actions</span>
+                    <span class="tech-item">Terraform</span>
+                    <span class="tech-item">Monitoring</span>
+                    <span class="tech-item">CI/CD</span>
+                  </div>
+                </div>
+                
+                <div class="tech-category">
+                  <h3>Data Engineering</h3>
+                  <div class="tech-list">
+                    <span class="tech-item">Apache Spark</span>
+                    <span class="tech-item">ETL Pipelines</span>
+                    <span class="tech-item">Data Modeling</span>
+                    <span class="tech-item">Analytics</span>
+                    <span class="tech-item">Real-time Processing</span>
+                    <span class="tech-item">Data Warehousing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="profile-sidebar">
+            <div class="contact-section">
+              <h2>Contact Protocols</h2>
+              <div class="contact-methods">
+                <div class="contact-item">
+                  <span class="contact-label">EMAIL</span>
+                  <a href="mailto:{{ site.email | default: 'contact@example.com' }}" class="contact-value">{{ site.email | default: "contact@example.com" }}</a>
+                </div>
+                
+                <div class="contact-item">
+                  <span class="contact-label">GITHUB</span>
+                  <a href="{{ site.github.owner_url }}" target="_blank" class="contact-value">{{ site.github.owner_name | default: "GitHub Profile" }}</a>
+                </div>
+                
+                <div class="contact-item">
+                  <span class="contact-label">LINKEDIN</span>
+                  <a href="#" class="contact-value">Professional Network</a>
+                </div>
+                
+                <div class="contact-item">
+                  <span class="contact-label">LOCATION</span>
+                  <span class="contact-value">{{ site.location | default: "Remote" }}</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="system-stats">
+              <h2>System Statistics</h2>
+              <div class="stats-list">
+                <div class="stat-row">
+                  <span class="stat-label">EXPERIENCE</span>
+                  <span class="stat-value">3+ Years</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">PROJECTS</span>
+                  <span class="stat-value">15+ Active</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">LANGUAGES</span>
+                  <span class="stat-value">8 Proficient</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">AVAILABILITY</span>
+                  <span class="stat-value">Open to Work</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">TIMEZONE</span>
+                  <span class="stat-value">{{ site.timezone | default: "UTC" }}</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">RESPONSE_TIME</span>
+                  <span class="stat-value">&lt; 24 Hours</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="interests-section">
+              <h2>System Interests</h2>
+              <div class="interests-list">
+                <div class="interest-item">Performance Optimization</div>
+                <div class="interest-item">Distributed Systems</div>
+                <div class="interest-item">Open Source</div>
+                <div class="interest-item">Machine Learning</div>
+                <div class="interest-item">Security</div>
+                <div class="interest-item">Automation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.profile-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.user-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--terminal-dark-green);
+}
+
+.user-name {
+  font-size: 3rem;
+  color: var(--terminal-amber);
+  text-shadow: 0 0 20px var(--terminal-amber);
+  margin-bottom: var(--spacing-sm);
+}
+
+.user-title {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-large);
+  color: var(--terminal-green);
+  text-shadow: 0 0 10px var(--terminal-green);
+  margin-bottom: var(--spacing-md);
+}
+
+.user-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-green);
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-online {
+  background: var(--terminal-green);
+  box-shadow: 0 0 10px var(--terminal-green);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.bio-section, .experience-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.bio-section h2, .experience-section h2 {
+  color: var(--terminal-amber);
+  text-shadow: 0 0 15px var(--terminal-amber);
+  margin-bottom: var(--spacing-lg);
+}
+
+.bio-text p {
+  font-family: var(--font-mono);
+  color: var(--terminal-green);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.tech-category h3 {
+  color: var(--terminal-green);
+  text-shadow: 0 0 10px var(--terminal-green);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-base);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.tech-item {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-amber);
+  background: rgba(255, 170, 0, 0.1);
+  border: 1px solid var(--terminal-amber);
+  padding: 4px 8px;
+  text-shadow: 0 0 5px var(--terminal-amber);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: rgba(255, 170, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 170, 0, 0.3);
+}
+
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.contact-section h2, .system-stats h2, .interests-section h2 {
+  color: var(--terminal-amber);
+  text-shadow: 0 0 15px var(--terminal-amber);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-base);
+}
+
+.contact-methods, .stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-item, .stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--terminal-dark-green);
+  background: rgba(0, 255, 0, 0.02);
+}
+
+.contact-label, .stat-label {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-green);
+  font-weight: 700;
+}
+
+.contact-value, .stat-value {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-amber);
+  text-shadow: 0 0 5px var(--terminal-amber);
+}
+
+.contact-value {
+  border: none;
+  text-decoration: none;
+}
+
+.contact-value:hover {
+  color: var(--terminal-green);
+  text-shadow: 0 0 10px var(--terminal-green);
+}
+
+.interests-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.interest-item {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-green);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-left: 2px solid var(--terminal-green);
+  background: rgba(0, 255, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+  background: rgba(0, 255, 0, 0.05);
+  border-left-color: var(--terminal-amber);
+  color: var(--terminal-amber);
+}
+
+@media (max-width: 1024px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .tech-categories {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .user-name {
+    font-size: 2rem;
+  }
+  
+  .tech-categories {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-item, .stat-row {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+  }
+}
+</style>
+
+<script>
+  // Typing animation for the about header
+  const typedTextElement = document.getElementById('typed-text');
+  const fullText = '> Loading user profile...';
+  
+  let currentIndex = 1; // Start after '>'
+  
+  function typeText() {
+    if (currentIndex <= fullText.length) {
+      typedTextElement.textContent = fullText.substring(0, currentIndex);
+      currentIndex++;
+      setTimeout(typeText, 80);
+    } else {
+      // Show profile content after typing is complete
+      setTimeout(() => {
+        const profileContent = document.querySelector('.profile-content');
+        profileContent.style.opacity = '1';
+        profileContent.style.transition = 'opacity 1s ease-in';
+      }, 500);
+    }
+  }
+  
+  // Start typing after a short delay
+  setTimeout(typeText, 1000);
+  
+  // Add scanlines effect to body
+  document.body.classList.add('scanlines');
+</script>

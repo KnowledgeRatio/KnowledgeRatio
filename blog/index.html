@@ -1,0 +1,199 @@
+---
+layout: default
+title: Blog - System Logs
+description: Technical blog posts and development insights
+permalink: /blog/
+---
+
+<div class="blog fade-in">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span>System Logs - {{ site.posts.size }} entries found</span>
+      <span class="terminal-status">LOG ACCESS GRANTED</span>
+    </div>
+    <div class="terminal-body">
+      <div class="typing-text">
+        <span id="typed-text">></span>
+        <span class="cursor"></span>
+      </div>
+      
+      <div class="blog-content" style="opacity: 0;">
+        {% if site.posts.size > 0 %}
+          <div class="posts-list">
+            {% for post in site.posts %}
+              <article class="post-entry">
+                <div class="post-meta">
+                  <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                  {% if post.tags.size > 0 %}
+                    <div class="post-tags">
+                      {% for tag in post.tags %}
+                        <span class="tag">{{ tag }}</span>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+                
+                <h2 class="post-title">
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h2>
+                
+                {% if post.excerpt %}
+                  <div class="post-excerpt">
+                    {{ post.excerpt | strip_html | truncatewords: 30 }}
+                  </div>
+                {% endif %}
+                
+                <div class="post-footer">
+                  <a href="{{ post.url | relative_url }}" class="btn">ACCESS LOG ></a>
+                  {% if post.read_time %}
+                    <span class="read-time">{{ post.read_time }} min read</span>
+                  {% endif %}
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="no-posts">
+            <p>No log entries found in the system database.</p>
+            <p>Check back later for system updates and technical documentation.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.post-entry {
+  border: 1px solid var(--terminal-dark-green);
+  background: rgba(0, 255, 0, 0.02);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+  border-color: var(--terminal-green);
+  background: rgba(0, 255, 0, 0.05);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+}
+
+.post-date {
+  color: var(--terminal-amber);
+  text-shadow: 0 0 5px var(--terminal-amber);
+}
+
+.post-tags {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.tag {
+  color: var(--terminal-amber);
+  background: rgba(255, 170, 0, 0.1);
+  border: 1px solid var(--terminal-amber);
+  padding: 2px 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.post-title a {
+  color: var(--terminal-green);
+  text-decoration: none;
+  border: none;
+  font-size: var(--font-size-large);
+  text-shadow: 0 0 10px var(--terminal-green);
+}
+
+.post-title a:hover {
+  color: var(--terminal-amber);
+  text-shadow: 0 0 15px var(--terminal-amber);
+}
+
+.post-excerpt {
+  font-family: var(--font-mono);
+  color: var(--terminal-green);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-time {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-dark-green);
+}
+
+.no-posts {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.no-posts p {
+  font-family: var(--font-mono);
+  color: var(--terminal-green);
+  margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .post-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .post-footer {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: flex-start;
+  }
+}
+</style>
+
+<script>
+  // Typing animation for the blog header
+  const typedTextElement = document.getElementById('typed-text');
+  const fullText = '> Accessing system logs...';
+  
+  let currentIndex = 1; // Start after '>'
+  
+  function typeText() {
+    if (currentIndex <= fullText.length) {
+      typedTextElement.textContent = fullText.substring(0, currentIndex);
+      currentIndex++;
+      setTimeout(typeText, 80);
+    } else {
+      // Show blog content after typing is complete
+      setTimeout(() => {
+        const blogContent = document.querySelector('.blog-content');
+        blogContent.style.opacity = '1';
+        blogContent.style.transition = 'opacity 1s ease-in';
+      }, 500);
+    }
+  }
+  
+  // Start typing after a short delay
+  setTimeout(typeText, 1000);
+  
+  // Add scanlines effect to body
+  document.body.classList.add('scanlines');
+</script>

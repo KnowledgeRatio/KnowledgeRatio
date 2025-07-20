@@ -1,0 +1,372 @@
+---
+layout: default
+title: Projects - Code Repository
+description: Development projects and code repositories
+permalink: /projects/
+---
+
+<div class="projects fade-in">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span>Project Repository - Code Database</span>
+      <span class="terminal-status">REPOSITORY ACCESS GRANTED</span>
+    </div>
+    <div class="terminal-body">
+      <div class="typing-text">
+        <span id="typed-text">></span>
+        <span class="cursor"></span>
+      </div>
+      
+      <div class="projects-content" style="opacity: 0;">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">KnowledgeRatio</h3>
+              <div class="project-status status-active">ACTIVE</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tech">Jekyll • SCSS • JavaScript</span>
+              <span class="project-date">2024</span>
+            </div>
+            <div class="project-description">
+              <p>WarGames-inspired personal website and knowledge base system. Features terminal-style interface with typing animations and retro aesthetic.</p>
+            </div>
+            <div class="project-links">
+              <a href="{{ site.github.repository_url }}" target="_blank" class="btn">VIEW SOURCE</a>
+              <a href="{{ '/' | relative_url }}" class="btn">LIVE DEMO</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">React Portfolio</h3>
+              <div class="project-status status-archived">ARCHIVED</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tech">React • Vite • CSS3</span>
+              <span class="project-date">2024</span>
+            </div>
+            <div class="project-description">
+              <p>Previous iteration of personal portfolio built with React 19 and Vite. Migrated to Jekyll for better GitHub Pages integration.</p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">ARCHIVED</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Terminal Interface</h3>
+              <div class="project-status status-development">DEV</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tech">Vanilla JS • CSS Animations</span>
+              <span class="project-date">2024</span>
+            </div>
+            <div class="project-description">
+              <p>Retro terminal interface components with typing effects, scanlines, and authentic CRT monitor aesthetics inspired by 1980s computer systems.</p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">IN PROGRESS</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Web Development Stack</h3>
+              <div class="project-status status-active">ACTIVE</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tech">Node.js • TypeScript • Docker</span>
+              <span class="project-date">Ongoing</span>
+            </div>
+            <div class="project-description">
+              <p>Modern full-stack development tools and frameworks. Containerized applications with TypeScript, Node.js backend, and React frontend.</p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">PRIVATE REPO</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Data Engineering Pipeline</h3>
+              <div class="project-status status-development">DEV</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tech">Python • Apache Spark • PostgreSQL</span>
+              <span class="project-date">2024</span>
+            </div>
+            <div class="project-description">
+              <p>Scalable data processing pipeline for ETL operations. Handles large datasets with distributed computing and real-time analytics.</p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">CONFIDENTIAL</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">API Gateway</h3>
+              <div class="project-status status-planning">PLANNING</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tech">Go • Kubernetes • Redis</span>
+              <span class="project-date">Q1 2025</span>
+            </div>
+            <div class="project-description">
+              <p>High-performance API gateway with rate limiting, authentication, and microservices orchestration. Built for cloud-native environments.</p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">PLANNING PHASE</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="repository-info">
+          <h2>Repository Statistics</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Active Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">8</div>
+              <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Uptime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.project-card {
+  border: 2px solid var(--terminal-dark-green);
+  background: rgba(0, 255, 0, 0.02);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--terminal-green);
+  background: rgba(0, 255, 0, 0.05);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-title {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-large);
+  color: var(--terminal-green);
+  text-shadow: 0 0 10px var(--terminal-green);
+  margin: 0;
+}
+
+.project-status {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  padding: 4px 8px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.status-active {
+  color: var(--terminal-green);
+  border-color: var(--terminal-green);
+  background: rgba(0, 255, 0, 0.1);
+  text-shadow: 0 0 5px var(--terminal-green);
+}
+
+.status-development {
+  color: var(--terminal-amber);
+  border-color: var(--terminal-amber);
+  background: rgba(255, 170, 0, 0.1);
+  text-shadow: 0 0 5px var(--terminal-amber);
+}
+
+.status-archived {
+  color: var(--terminal-dark-green);
+  border-color: var(--terminal-dark-green);
+  background: rgba(0, 200, 0, 0.1);
+}
+
+.status-planning {
+  color: var(--terminal-blue);
+  border-color: var(--terminal-blue);
+  background: rgba(0, 136, 255, 0.1);
+  text-shadow: 0 0 5px var(--terminal-blue);
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+}
+
+.project-tech {
+  color: var(--terminal-amber);
+  text-shadow: 0 0 5px var(--terminal-amber);
+}
+
+.project-date {
+  color: var(--terminal-dark-green);
+}
+
+.project-description {
+  margin-bottom: var(--spacing-md);
+}
+
+.project-description p {
+  font-family: var(--font-mono);
+  color: var(--terminal-green);
+  line-height: 1.6;
+  font-size: var(--font-size-small);
+}
+
+.project-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.repository-info {
+  border-top: 2px solid var(--terminal-green);
+  padding-top: var(--spacing-lg);
+}
+
+.repository-info h2 {
+  margin-bottom: var(--spacing-lg);
+  color: var(--terminal-amber);
+  text-shadow: 0 0 15px var(--terminal-amber);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.stat-card {
+  text-align: center;
+  border: 1px solid var(--terminal-dark-green);
+  background: rgba(0, 255, 0, 0.02);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--terminal-green);
+  background: rgba(0, 255, 0, 0.05);
+}
+
+.stat-number {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--terminal-amber);
+  text-shadow: 0 0 15px var(--terminal-amber);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-header {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+  }
+  
+  .project-meta {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+  }
+  
+  .project-links {
+    flex-direction: column;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<script>
+  // Typing animation for the projects header
+  const typedTextElement = document.getElementById('typed-text');
+  const fullText = '> Loading project repository...';
+  
+  let currentIndex = 1; // Start after '>'
+  
+  function typeText() {
+    if (currentIndex <= fullText.length) {
+      typedTextElement.textContent = fullText.substring(0, currentIndex);
+      currentIndex++;
+      setTimeout(typeText, 80);
+    } else {
+      // Show projects content after typing is complete
+      setTimeout(() => {
+        const projectsContent = document.querySelector('.projects-content');
+        projectsContent.style.opacity = '1';
+        projectsContent.style.transition = 'opacity 1s ease-in';
+      }, 500);
+    }
+  }
+  
+  // Start typing after a short delay
+  setTimeout(typeText, 1000);
+  
+  // Add scanlines effect to body
+  document.body.classList.add('scanlines');
+</script>
