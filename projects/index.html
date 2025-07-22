@@ -9,7 +9,10 @@ permalink: /projects/
   <div class="terminal-window">
     <div class="terminal-header">
       <span>Project Repository</span>
-      <span class="terminal-status">REPOSITORY ACCESS GRANTED - PERSONAL ONLY</span>
+      <div class="header-controls">
+        <span class="terminal-status">REPOSITORY ACCESS GRANTED - PERSONAL ONLY</span>
+        <a href="https://github.com/users/KnowledgeRatio/projects/2/views/1" target="_blank" class="roadmap-btn">[PUBLIC ROADMAP]</a>
+      </div>
     </div>
     <div class="terminal-body">
       <div class="typing-text">
@@ -26,7 +29,7 @@ permalink: /projects/
             </div>
             <div class="project-meta">
               <span class="project-tech">Jekyll | SCSS | HTML</span>
-              <span class="project-date">July 2025</span>
+
             </div>
             <div class="project-description">
               <p>WarGames-inspired personal website and knowledge base system. Features terminal-style interface with typing animations and retro aesthetic.</p>
@@ -34,6 +37,7 @@ permalink: /projects/
             <div class="project-links">
               <a href="https://github.com/KnowledgeRatio/KnowledgeRatio" target="_blank" class="btn">VIEW SOURCE</a>
               <a href="https://knowledgeratio.github.io/KnowledgeRatio/projects/" class="btn">LIVE DEMO</a>
+              <a href="https://knowledgeratio.github.io/KnowledgeRatio/projects/" class="btn">PUBLIC ROADMAP</a>
             </div>
           </div>
           
@@ -44,7 +48,6 @@ permalink: /projects/
             </div>
             <div class="project-meta">
               <span class="project-tech">AI Foundry | Ollama | Misinformation</span>
-              <span class="project-date">April 2025</span>
             </div>
             <div class="project-description">
               <p> Pronounced 'Rogue', ancient European word meaning slander, accuse, and incite, amongst other things. Róg is an experimental research project into the the impact of AI on misinformation, disinformation and propaganda; including its role in both propagation and mitigation.</p>
@@ -62,7 +65,6 @@ permalink: /projects/
             </div>
             <div class="project-meta">
               <span class="project-tech">GitHub Copilot | Semantic Kernel | Python </span>
-              <span class="project-date">May 2025</span>
             </div>
             <div class="project-description">
               <p>Expanding upon the original Securing the Realm Project, Agentic Adventures introduces Multi Agent Systems to the world of Tabletop Roleplaying Games, to augment the party's imagination through Securing the Realm's 'DM-less' experience. The project also explores the use of agentic AI in coding, QA and DevOps using early access technologies. </p>
@@ -79,7 +81,6 @@ permalink: /projects/
             </div>
             <div class="project-meta">
               <span class="project-tech">Azure OpenAI | SLM's | Azure AI Content Safety</span>
-              <span class="project-date">Ongoing</span>
             </div>
             <div class="project-description">
               <p>An exploration of Responsible AI development projects told through the lens of creating a Tabletop Roleplaying app. Securing the Realm introduces gamers to the 'DM-less' experience, learning that AI is not a human replacement but an opportunity to create net new kinds of experiences and augment human users.</p>
@@ -104,6 +105,35 @@ permalink: /projects/
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.roadmap-btn {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--terminal-amber);
+  text-decoration: none;
+  border: 1px solid var(--terminal-amber);
+  padding: 4px 8px;
+  background: rgba(255, 170, 0, 0.1);
+  text-shadow: 0 0 5px var(--terminal-amber);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.roadmap-btn:hover {
+  color: var(--terminal-green);
+  border-color: var(--terminal-green);
+  background: rgba(0, 255, 0, 0.1);
+  text-shadow: 0 0 10px var(--terminal-green);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
 }
 
 .project-card {
@@ -259,6 +289,12 @@ permalink: /projects/
     grid-template-columns: 1fr;
   }
   
+  .header-controls {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+  }
+  
   .project-header {
     flex-direction: column;
     gap: var(--spacing-xs);
@@ -292,10 +328,9 @@ permalink: /projects/
 </style>
 
 <script>
-  // Typing animation for the projects header
   const typedTextElement = document.getElementById('typed-text');
   const fullText = '> Loading project repository...';
-  
+
   let currentIndex = 1; // Start after '>'
   
   function typeText() {
