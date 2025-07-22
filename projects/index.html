@@ -9,10 +9,7 @@ permalink: /projects/
   <div class="terminal-window">
     <div class="terminal-header">
       <span>Project Repository</span>
-      <div class="header-controls">
-        <span class="terminal-status">REPOSITORY ACCESS GRANTED - PERSONAL ONLY</span>
-        <a href="https://github.com/users/KnowledgeRatio/projects/2/views/1" target="_blank" class="roadmap-btn">[PUBLIC ROADMAP]</a>
-      </div>
+      <span class="terminal-status">REPOSITORY ACCESS GRANTED - PERSONAL ONLY</span>
     </div>
     <div class="terminal-body">
       <div class="typing-text">
@@ -105,35 +102,6 @@ permalink: /projects/
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
-}
-
-.header-controls {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-}
-
-.roadmap-btn {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-small);
-  color: var(--terminal-amber);
-  text-decoration: none;
-  border: 1px solid var(--terminal-amber);
-  padding: 4px 8px;
-  background: rgba(255, 170, 0, 0.1);
-  text-shadow: 0 0 5px var(--terminal-amber);
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-
-.roadmap-btn:hover {
-  color: var(--terminal-green);
-  border-color: var(--terminal-green);
-  background: rgba(0, 255, 0, 0.1);
-  text-shadow: 0 0 10px var(--terminal-green);
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
 }
 
 .project-card {
@@ -287,12 +255,6 @@ permalink: /projects/
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .header-controls {
-    flex-direction: column;
-    gap: var(--spacing-xs);
-    align-items: flex-start;
   }
   
   .project-header {
